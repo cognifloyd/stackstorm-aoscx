@@ -1,0 +1,3 @@
+requests
+tornado
+pyaoscx >= 0.2.1
