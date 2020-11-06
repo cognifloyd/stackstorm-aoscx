@@ -32,16 +32,16 @@ jobs:
           paths:
             - ~/.cache/pip
             - ~/.apt-cache
-      # NOTE: We use virtualenv files from Python 2.7 step in "deploy" job so we
-      # only persist paths from this job
-      - persist_to_workspace:
-          root: /
-          paths:
-            - home/circleci/ci
-            - home/circleci/virtualenv
-            - tmp/st2
-            - home/circleci/repo
-            - home/circleci/.gitconfig
+      # # NOTE: we are NOT using the workspace from python2.7 builds because
+      # # this pack only builds python3
+      # - persist_to_workspace:
+      #     root: /
+      #     paths:
+      #       - home/circleci/ci
+      #       - home/circleci/virtualenv
+      #       - tmp/st2
+      #       - home/circleci/repo
+      #       - home/circleci/.gitconfig
 
   # NOTE: Until we add "python_version" metadata attribute to pack.yaml and
   # explicitly call which packs work with Python 3.x, Python 3.x failures are
@@ -87,10 +87,21 @@ jobs:
           paths:
             - ~/.cache/pip
             - ~/.apt-cache
+      # NOTE: We use virtualenv files from Python 3.6 step in "deploy" job so we
+      # only persist paths from this job
+      - persist_to_workspace:
+          root: /
+          paths:
+            - home/circleci/ci
+            - home/circleci/virtualenv
+            - tmp/st2
+            - home/circleci/repo
+            - home/circleci/.gitconfig
+
 
   deploy:
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/python:3.6
 
     working_directory: ~/repo
 
@@ -100,7 +111,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependency-cache-py27-{{ checksum "requirements.txt" }}
+          key: v1-dependency-cache-py36-{{ checksum "requirements.txt" }}
       - attach_workspace:
           at: /
       - run:
