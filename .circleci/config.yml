@@ -120,17 +120,19 @@ workflows:
   # Workflow which runs on each push
   build_test_deploy_on_push:
     jobs:
-      - build_and_test_python27
+      # TODO: Figure out how to skip python27 tests if the pack doesn't support python2
+      # - build_and_test_python27
       - build_and_test_python36
       - deploy:
           requires:
-            - build_and_test_python27
+            - build_and_test_python36
           filters:
             branches:
               only: master
   build_test_weekly:
     jobs:
-      - build_and_test_python27
+      # TODO: Figure out how to skip python27 tests if the pack doesn't support python2
+      # - build_and_test_python27
       - build_and_test_python36
     # Workflow which runs nightly - note we don't perform deploy job on nightly
     # build
