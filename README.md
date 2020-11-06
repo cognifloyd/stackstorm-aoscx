@@ -17,13 +17,10 @@ as well as workflows including third-party tools such as Ansible.
 
 ## Installation
 
-To install this pack into your local StackStorm server clone our Github repository, 
-change into the downloaded directory, and install the pack using the `st2 install` command 
+To install this pack use the `st2 install` command 
 specifying Python3:
 ```
-git clone https://github.com/aruba/stackstorm-aoscx.git
-cd stackstorm-aoscx
-st2 pack install file://$PWD --python3
+st2 pack install aoscx --python3
 ```
 
 We are currently pending review to include our pack in [StackStorm Exchange](https://exchange.stackstorm.org/). 
