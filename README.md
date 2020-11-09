@@ -84,6 +84,6 @@ This pack defines rules for handling syslog or websocket events from AOS-CX devi
 
 ## Contribution
 At Aruba Networks we're dedicated to ensuring the quality of our products, so if you find any
-issues at all please open an issue on our [Github](https://github.com/aruba/stackstorm-aoscx) and we'll be sure to respond promptly!
+issues at all please open an issue on our [Github](https://github.com/StackStorm-Exchange/stackstorm-aoscx) and we'll be sure to respond promptly!
 
-For more contribution opportunities follow our guidelines outlined in our [CONTRIBUTING.md](https://github.com/aruba/stackstorm-aoscx/blob/master/CONTRIBUTING.md)
+For more contribution opportunities follow our guidelines outlined in our [CONTRIBUTING.md](https://github.com/StackStorm-Exchange/stackstorm-aoscx/blob/master/CONTRIBUTING.md)
