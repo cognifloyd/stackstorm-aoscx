@@ -23,7 +23,6 @@ specifying Python3:
 st2 pack install aoscx --python3
 ```
 
-We are currently pending review to include our pack in [StackStorm Exchange](https://exchange.stackstorm.org/). 
 
 ## Configuration
 The `aoscx.yaml.example` files is an example configuration file used by the AOS-CX Websocket `port_sensor`.  
