@@ -10,6 +10,7 @@ description: Integration pack for Aruba's AOS-CX switch.
 keywords:
     - aoscx
     - aruba
+    - 'aos-cx'
 # Pack version which must follow semver format (<major>.<minor>.<patch> e.g. 1.0.0)
 version: 1.0.2
 # A list of major Python versions pack is tested with and works with.
