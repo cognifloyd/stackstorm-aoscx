@@ -3,15 +3,16 @@
 ref: aoscx
 # User-friendly pack name. If this attribute contains spaces or any other special characters, then
 # the "ref" attribute must also be specified (see above).
-name: Stackstorm AOSCX Pack
+name: Aruba AOS-CX Pack
 # User-friendly pack description.
 description: Integration pack for Aruba's AOS-CX switch.
 # Keywords which are used when searching for packs.
 keywords:
     - aoscx
     - aruba
+    - 'aos-cx'
 # Pack version which must follow semver format (<major>.<minor>.<patch> e.g. 1.0.0)
-version: 1.0.1
+version: 1.0.2
 # A list of major Python versions pack is tested with and works with.
 python_versions:
   - "3"

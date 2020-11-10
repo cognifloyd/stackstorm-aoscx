@@ -17,16 +17,12 @@ as well as workflows including third-party tools such as Ansible.
 
 ## Installation
 
-To install this pack into your local StackStorm server clone our Github repository, 
-change into the downloaded directory, and install the pack using the `st2 install` command 
+To install this pack use the `st2 install` command 
 specifying Python3:
 ```
-git clone https://github.com/aruba/stackstorm-aoscx.git
-cd stackstorm-aoscx
-st2 pack install file://$PWD --python3
+st2 pack install aoscx --python3
 ```
 
-We are currently pending review to include our pack in [StackStorm Exchange](https://exchange.stackstorm.org/). 
 
 ## Configuration
 The `aoscx.yaml.example` files is an example configuration file used by the AOS-CX Websocket `port_sensor`.  
@@ -88,6 +84,6 @@ This pack defines rules for handling syslog or websocket events from AOS-CX devi
 
 ## Contribution
 At Aruba Networks we're dedicated to ensuring the quality of our products, so if you find any
-issues at all please open an issue on our [Github](https://github.com/aruba/stackstorm-aoscx) and we'll be sure to respond promptly!
+issues at all please open an issue on our [Github](https://github.com/StackStorm-Exchange/stackstorm-aoscx) and we'll be sure to respond promptly!
 
-For more contribution opportunities follow our guidelines outlined in our [CONTRIBUTING.md](https://github.com/aruba/stackstorm-aoscx/blob/master/CONTRIBUTING.md)
+For more contribution opportunities follow our guidelines outlined in our [CONTRIBUTING.md](https://github.com/StackStorm-Exchange/stackstorm-aoscx/blob/master/CONTRIBUTING.md)
